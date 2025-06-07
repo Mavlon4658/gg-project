@@ -15,3 +15,17 @@ if (phoneInp.length) {
         })
     });
 }
+
+const headerBars = document.querySelector('.header-bars');
+const menu = document.querySelector('.menu');
+const menuClose = document.querySelector('.menu-close');
+
+headerBars.onclick = () => {
+    menu.classList.add('active');
+    bodyHidden();
+}
+
+menuClose.onclick = () => {
+    menu.classList.remove('active');
+    bodyVisible();
+}
